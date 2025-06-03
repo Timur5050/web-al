@@ -11,14 +11,14 @@
       }
     ],
     "routes": [
-    {
+      {
         "src": "/vacancies(.*)",
         "dest": "back_al/src/app.js"
-    },
-    {
+      },
+      {
         "src": "/(.*)",
         "dest": "back_al/public/build/index.html"
-    }
+      }
     ],
     "installCommand": "npm run deploy:prepare",
     "buildCommand": "echo 'Build handled in installCommand'",
