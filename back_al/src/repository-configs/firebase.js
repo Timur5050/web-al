@@ -2,9 +2,9 @@ import { initializeApp, cert } from 'firebase-admin/app'
 import { getFirestore } from 'firebase-admin/firestore'
 
 const serviceAccount = {
-  project_id: process.env.FIREBASE_PROJECT_ID,
-  client_email: process.env.FIREBASE_CLIENT_EMAIL,
-  private_key: process.env.FIREBASE_PRIVATE_KEY?.replace(/\\n/g, '\n'),
+  project_id: "last-2843c",
+  client_email: "firebase-adminsdk-fbsvc@last-2843c.iam.gserviceaccount.com",
+  private_key: "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDhciksbLr5GU+N\nYWO27AZMmgN9o+JjHPsA7B9IPjO+p4+sCLRt6yWrE9W01FNWN8YhHCAJB/9kN3k9\n71qMV+qtrwFtm+bs2AqqZ25b0KYt5fbXYT8rES3S/FPXx5MivHgXOAbyQujVnHvP\nga8twt6I1dEUBOyLyWYvxI9R7DfZYwS/R2xmhvH+66cHTkAJ+dwfnzVaPXa5FgBC\nDULgCmbibmXir6Abi0xK/fXcojdf6o+g9EKFEQXyaDeZQd+XoCl+y1eh+QmgzJHO\naBgs4ZAoxlwlI39GS6UauW0gxhWdPOgHg86JS+MSuvcBPlALc+FUL6XAVON5XS0t\nvjmNto5zAgMBAAECggEAJS7tkI4HEUJgnGpwMQGLu8L5NBXoJxMRaSJeDyMck2On\n7tFpZOm68ZUDaIr5NcgG2Ht+4yPGYTKZv3faAOTCkvlBgeEL/OCtyFOSivfbuMfs\nPF4l4Ntj/0pZJRvzGMW/WYuxmu/N3ubWMDBCWDNYUyGk6tQxvuUtrU+SQzTz3y7G\nN3vEPvinCofGW0dh54pfJXfjU6LiV9PxLRTxqF733+MxX8C5tO1IbeG3msoYT+yw\nowB/dcSfqzEqQ9TUBDuM5QNdDU9POXgm59i56Z43lT2f/yI7UcmVnFbKOuhAa2Yh\ny/UOTSsmjBXsMYwI/n0K2yuNhJmjhoCJHIuDX7AZpQKBgQD7E4SbKR/dXH0zNjrq\nrw8U0pf61FhArJ8UPQf9MyxeqWotdu8NiTIG/dD8RlH1RqkIi92Dab+GczfH/xng\njv2bglsm+57VCg2SKQjPpIYJbHV+Cfn4sCaezjknZzDYnZhzuqMbf6fOax0+ggmn\nv4/su+JGAk4fyxX3b1XcrONIDQKBgQDl3fh7nzflCbhR/sh9KEJdK6pFeOBQJJtv\nH6JZFZvn178P4Tt9zCwnJPchb0Y1wlA71cR+h/DzCqlzyEwuM77Vcyl3HsZhJJgT\n3Cc31d/00GUIUup4IJDSq57mydqhonI6hKHmbgFaevISNQf4LDuFd2hqjNwIQNi9\nMT0VPAkQfwKBgDL80rgj0NnGV5KX170jEd/7qGuCxe1UYPXeMwojY0ZSB0L2XTOV\ngfhTgSZKLYiu8dLPfIucZQ2rxk8yKhIlV7FF9rbi8G15HippdOWeFq5BPVb8Naxg\nMWecn5S16wCCeJw/8bG66dwMeqLgC4/qYhMEUL5A55ajSnG2RWyMG5fdAoGBAOLA\noaMJQDEe8oVoKUxVT4nrTg80G0rTocTv1s28JEyDJgW7MF168D85FtQTmZXkdhNg\nX3JWFZka9mexuXyGLQUQkmHgqN8hIyfML5/DyiYNAO1CJeuUbGh1Rc3yZ0q1Haue\nNLtD3u/rgin1yEPHFnwle4pII7G8jlGrZc8xpttvAoGBAOMp5wMJL/23ckul57rM\nD2wsFrmNR5gi8OY6EwEAEmh5mFI0qVA36QqFqlfLH+INVlTn4QZ6dW7PrYg+oaC0\nk/Sw+h74uUb2vmc6AZB0Jr/CyGJTK6Zl6XX4CidW0Yg/msTsq6UcYcJLSN4kGzFZ\n9X6EbrSLn/5eJD3y92/YXut6\n-----END PRIVATE KEY-----\n",
 }
 
 initializeApp({
