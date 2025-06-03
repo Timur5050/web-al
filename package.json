@@ -1,6 +1,6 @@
 {
     "scripts": {
-      "vercel-build": "cd web_al && npm install && npm run build && mkdir -p ../back_al/public && cp -r build ../back_al/public"
+      "vercel-build": "cd web_al/job-platform && npm install && npm run build && mkdir -p ../../back_al/public && cp -r build ../../back_al/public"
     }
   }
   
