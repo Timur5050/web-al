@@ -1,7 +1,6 @@
 {
 "scripts": {
-  "deploy:prepare": "cd web_al/job-platform && npm install && npm run build && mkdir -p ../../back_al/public/build && cp -r build/* ../../back_al/public/build && ls -la ../../back_al/public/build && pwd"
-
+  "deploy:prepare": "cd web_al/job-platform && echo 'Starting build in $(pwd)' && npm install && npm run build && echo 'Build completed, copying files' && mkdir -p $PWD/../../back_al/public/build && cp -r build/* $PWD/../../back_al/public/build && echo 'Files copied to $(ls -la $PWD/../../back_al/public/build)' && pwd"
     }
 }
   

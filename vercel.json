@@ -21,6 +21,6 @@
       }
     ],
     "installCommand": "npm run deploy:prepare",
-    "buildCommand": "echo 'Build handled in installCommand'",
+    "buildCommand": "npm run deploy:prepare",
     "outputDirectory": "back_al/public/build"
   }
