@@ -20,7 +20,7 @@
         "dest": "back_al/public/build/index.html"
       }
     ],
-    "installCommand": "npm run deploy:prepare",
-    "buildCommand": "npm run deploy:prepare",
+    "installCommand": "npm install",
+    "buildCommand": "cd web_al/job-platform && npm install && npm run build && mkdir -p $PWD/../../back_al/public/build && cp -r build/* $PWD/../../back_al/public/build && ls -la $PWD/../../back_al/public/build && pwd",
     "outputDirectory": "back_al/public/build"
   }
