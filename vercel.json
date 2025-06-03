@@ -1,0 +1,26 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "back_al/src/app.js",
+        "use": "@vercel/node"
+      },
+      {
+        "src": "back_al/public/build/**/*",
+        "use": "@vercel/static"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/vacancies(.*)",
+        "dest": "back_al/src/app.js"
+      },
+      {
+        "src": "/(.*)",
+        "dest": "back_al/src/app.js"
+      }
+    ],
+    "installCommand": "npm run deploy:prepare",
+    "buildCommand": "echo 'Build handled in installCommand'",
+    "outputDirectory": "back_al/public/build"
+  }

@@ -1,0 +1,19 @@
+# === Загальне ===
+.env
+.DS_Store
+*.log
+
+# === Node.js (бек) ===
+back_al/node_modules/
+back_al/public/build/
+back_al/.env
+
+# === React (фронт) ===
+web_al/node_modules/
+web_al/build/
+web_al/.env
+
+# === Railway (опційно) ===
+.railway/
+back_al/src/repository-configs/serviceAccountKey.json
+.vercel

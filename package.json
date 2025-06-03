@@ -1,0 +1,12 @@
+{
+    "scripts": {
+      "build:frontend": "cd web_al && npm run build",
+      "copy:frontend": "cpy 'web_al/build/**/*' 'back_al/public/build' --parents",
+      "build:backend": "cd back_al && npm install",
+      "start": "cd back_al && npm start",
+      "deploy:prepare": "npm run build:frontend && npm run copy:frontend && npm run build:backend"
+    },
+    "devDependencies": {
+      "cpy-cli": "^5.0.0"
+    }
+  }
