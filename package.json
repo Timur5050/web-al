@@ -1,8 +1,7 @@
 {
 "scripts": {
-  "build": "cd web_al/job-platform && npm run build && mkdir -p ../../back_al/public/build && cp -r build/* ../../back_al/public/build && ls ../../back_al/public/build"
+  "deploy:prepare": "cd web_al/job-platform && npm run build && mkdir -p ../../back_al/public/build && cp -r build/* ../../back_al/public/build && ls ../../back_al/public/build"
 
+    }
 }
-
-  }
   
